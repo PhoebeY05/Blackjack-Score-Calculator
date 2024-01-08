@@ -6,11 +6,15 @@ A mobile app to optimise playing experience with relatives during Chinese New Ye
 ![image](https://github.com/PhoebeY05/chinese-blackjack-score-calculator/assets/115935747/99c1fa26-1159-4d01-b1c3-7e7560d0bce8)
 
 ## Disclaimers
-- Styling optimised for iPhone 15 Plus
+
 ### Might improve in future:
 - Redundant code as I chose to copy some elements instead of render items conditionally in view of time (e.g. Customise Screen is mostly a copy of Score Screen)
 - Repeated functionalities to bypass the constraints of the use cases (e.g. returnUpdated & updateElement)
 - Case-specific components that can be generalised (e.g. all the Popups in Popup.js)
+
+## Uncertainty
+- Basic score patterns have been tested but some extreme cases may not be calculated correctly
+- Styling optimised for iPhone 15 Plus so components might be distorted in some other models
 
 ## What does this app do?
 1. Calculates scores based on each player's combo
