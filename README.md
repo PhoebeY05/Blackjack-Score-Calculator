@@ -38,6 +38,16 @@ This app is very messy & unstructured as it is training code for me to self-lear
 ## Steps to take:
 1. Run package.json with npm install to manage the dependencies
 2. Run npx expo start in the root folder (chinese-blackjack-score-calculator)
+## Possible errors:
+1. Expo Status Bar not installed
+```
+"expo-status-bar" is added as a dependency in your project's package.json but it doesn't seem to be installed. Please run "yarn" or "npm install" to fix this issue.
+```
+- Solution:
+```bash
+sudo npm install
+```
+
 
 
 
