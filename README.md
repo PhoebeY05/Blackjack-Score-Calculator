@@ -37,7 +37,7 @@ This app is very messy & unstructured as it is training code for me to self-lear
 - @kaloraat/react-native-text (https://www.npmjs.com/package/@kaloraat/react-native-text)
 ## Steps to take:
 1. Run package.json with npm install to manage the dependencies
-2. Run npx expo start in the root folder (chinese-blackjack-score-calculator)
+2. Run npx expo start in the root folder (chinese-blackjack-score-calculator-master)
 ## Possible errors:
 1. Expo Status Bar not installed
 ```
