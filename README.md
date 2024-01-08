@@ -1,24 +1,31 @@
 # CHINESE BLACKJACK SCORE CALCULATOR
 ## Description
 A mobile app to optimise playing experience with relatives during Chinese New Year!
+### Inspiration:
+- Playing 21 with family during free time on overseas trip
+- Recorded gains and losses on Apple Notes
+- Not only tedious, but also inaccurate as 1 person has to calculate & record the score for 4 people
+- Wanted an app to automate the calculation & was interested in app development => culminated in this app
 
 ### Detailed Instructions:
 ![image](https://github.com/PhoebeY05/chinese-blackjack-score-calculator/assets/115935747/99c1fa26-1159-4d01-b1c3-7e7560d0bce8)
 
-## Disclaimers
-
+## Disclaimer
+This app is very messy & unstructured as it is training code for me to self-learn react native 
 ### Might improve in future:
-- Redundant code as I chose to copy some elements instead of render items conditionally in view of time (e.g. Customise Screen is mostly a copy of Score Screen)
-- Repeated functionalities to bypass the constraints of the use cases (e.g. returnUpdated & updateElement)
-- Case-specific components that can be generalised (e.g. all the Popups in Popup.js)
+- Redundant code: Chose to copy some elements instead of using conditional rendering which could lead to other problems (e.g. Customise Screen is mostly a copy of Score Screen)
+- Repeated functionalities: Bypass constraints of use cases so less modification is necessary (e.g. returnUpdated & updateElement)
+- Case-specific components: Can be generalised but might cause other errors(e.g. all the Popups in Popup.js)
+- Minor errors that do not affect usage: Easy to fix but did not want to risk further complications (e.g. value is a number in TextInput)
+- Lack of comments & incoherent variable naming: Focus was on making a workable app so readability was compromised(e.g. li, setLi, n)
 
-## Uncertainty
+### Uncertainty
 - Basic score patterns have been tested but some extreme cases may not be calculated correctly
 - Styling optimised for iPhone 15 Plus so components might be distorted in some other models
 
 ## What does this app do?
 1. Calculates scores based on each player's combo
-2. Supports different playings styles
+2. Supports different playing styles
 - Standard: Preset rotation and fixed or variable duration
 - Customise: Spontaneously change banker with a single tap
 
