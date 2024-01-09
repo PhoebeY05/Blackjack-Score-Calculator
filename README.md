@@ -12,12 +12,12 @@ A mobile app to optimise playing experience with relatives during Chinese New Ye
 
 ## Disclaimer
 This app is very messy & unstructured as it is training code for me to self-learn react native 
-### Might improve in future:
-- Redundant code: Chose to copy some elements instead of using conditional rendering which could lead to other problems (e.g. Customise Screen is mostly a copy of Score Screen)
-- Repeated functionalities: Bypass constraints of use cases so less modification is necessary (e.g. returnUpdated & updateElement)
-- Case-specific components: Can be generalised but might cause other errors(e.g. all the Popups in Popup.js)
-- Minor errors that do not affect usage: Easy to fix but did not want to risk further complications (e.g. value is a number in TextInput)
-- Lack of comments & incoherent variable naming: Focus was on making a workable app so readability was compromised(e.g. li, setLi, n)
+### To improve in future:
+- [ ] Redundant code: Chose to copy some elements instead of using conditional rendering which could lead to other problems (e.g. Customise Screen is mostly a copy of Score Screen)
+- [ ] Repeated functionalities: Bypass constraints of use cases so less modification is necessary (e.g. returnUpdated & updateElement)
+- [ ] Case-specific components: Can be generalised but might cause other errors(e.g. all the Popups in Popup.js)
+- [ ] Minor errors that do not affect usage: Easy to fix but did not want to risk further complications (e.g. value is a number in TextInput)
+- [ ] Lack of comments & incoherent variable naming: Focus was on making a workable app so readability was compromised(e.g. li, setLi, n)
 
 ### Uncertainty
 - Basic score patterns have been tested but some extreme cases may not be calculated correctly
