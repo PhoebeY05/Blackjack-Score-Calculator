@@ -3,7 +3,7 @@ import {View, TextInput} from "react-native";
 import Text from "@kaloraat/react-native-text";
 
 const UserInput = ({
-    name,
+    text,
     value, 
     setValue, 
     autoCapitalize = "words", 
@@ -18,7 +18,7 @@ const UserInput = ({
 }) => {
     return (
         <View style = {overallStyle}>
-            <Text semi style = {text_style}>{name}</Text>
+            <Text semi style = {text_style}>{text}</Text>
             <TextInput
             autoCorrect = {false}
             autoCapitalize = {autoCapitalize}
@@ -27,7 +27,7 @@ const UserInput = ({
             textAlign = {textAlign}
             maxLength = {maxLength}
             style = {style}
-            value = {value}
+            value = {value.toString()}
             onChangeText = {(text) => setValue(text)}
             clearButtonMode= {clearButtonMode}
             />

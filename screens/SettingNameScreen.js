@@ -1,59 +1,15 @@
 import * as React from 'react';
 import {useState} from 'react';
-import { View, Image,  KeyboardAvoidingView } from 'react-native';
-import Text from "@kaloraat/react-native-text";
+import { View, Image } from 'react-native';
 import UserInput from '../components/UserInput'
-import {SubmitButtonS, SubmitButtonB }from '../components/SubmitButton';
-import { useRoute } from "@react-navigation/native"
-
-
-// function SettingPlayersScreen({ navigation }) {
-//     const [players, setPlayers] = useState("")
-//     return (
-//       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-//         <UserInput 
-//           name = "Number of Players:" 
-//           value = {players} 
-//           setValue = {setPlayers} 
-//           autoCapitalize = "words"
-//           autoCorrect = {false}
-//           maxLength= {2}
-//           style = {{
-//             borderBottomWidth: 0.5,
-//             height: 70,
-//             borderBottomColor: "#8e93a1",
-//             marginBottom: 30,
-//             fontSize: 50,
-//             justifyContent: "center"
-//             }}
-//             text_style = {{fontSize: 50}}
-//             textAlign= 'center'
-//         />
-//         <SubmitButtonP title ="Submit" page = "SettingN" navigation = {navigation} variable = {players} 
-//             style = {{
-//                 backgroundColor: "#008000",
-//                 height: 70,
-//                 width: 150,
-//                 marginVertical: 20,
-//                 justifyContent: "center",
-//                 marginHorizontal: 15,
-//                 borderRadius:10,
-//                 borderWidth:3
-//             }}
-//             text_style = {{
-//                 fontSize: 30,
-//             }}
-//         />
-//         <Text>{JSON.stringify({players}, null, 4)}</Text>
-//       </View>
-//     );
-// }
+import {ConfirmButton, ControlButton }from '../components/Buttons';
 
 function SettingNameScreen({ navigation }) {
     var [name, setName] = useState("")
     const [names, setNames] = useState([])
     return (
         <View style = {{flex:1, alignItems:"center", justifyContent:"center"}}>
+            {/* Background Image */}
             <Image 
                 style = {{
                     position: 'absolute',
@@ -65,12 +21,10 @@ function SettingNameScreen({ navigation }) {
                   }} 
                 source = {require('../assets/bg.png') }
             /> 
+            {/* Input text box & title */}
             <View style = {{zIndex:1, left:10}}>
-                {/* <View style = {{flex:1}}>
-                    <Text title center bold style = {{bottom:50, height: 100}}> ADD PLAYERS HERE:</Text>
-                </View> */}
                 <UserInput 
-                name = "Name of Player:" 
+                text = "Name of Player:" 
                 value = {name} 
                 setValue = {setName} 
                 autoCapitalize = "words"
@@ -91,7 +45,8 @@ function SettingNameScreen({ navigation }) {
                 overallStyle = {{ marginHorizontal: 24, width: 400}}
                 textAlign = "left"
                 />
-                <SubmitButtonS names = {names} setNames ={setNames} name ={name}
+                {/* Button to confirm name */}
+                <ConfirmButton setArray ={setNames} value = {name}
                     style = {{
                         backgroundColor: "#008000",
                         height: 50,
@@ -107,7 +62,8 @@ function SettingNameScreen({ navigation }) {
                         fontSize: 24,
                     }}
                 />
-                <SubmitButtonB title = "Choose Your Mode!" onPress = {() => navigation.navigate("Mode", {data :names})}
+                {/* Button to go to next page */}
+                <ControlButton title = "Choose Your Mode!" onPress = {() => navigation.navigate("Mode", {names :names})}
                     style = {{
                         backgroundColor: "red",
                         height: 70,

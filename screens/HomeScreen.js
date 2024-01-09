@@ -6,13 +6,15 @@ import Text from "@kaloraat/react-native-text";
 function HomeScreen({ navigation }) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        {/* Title of App & Logo*/}
         <Text title bold center style ={{  }}>Chinese BlackJack Score Calculator</Text>
         <Image 
               source = {require("../assets/logo.png")}
               style = {{height:200, width:200, alignItems:"center", justifyContent:"center", top:50}}
         />
+        {/* Start Button */}
         <TouchableOpacity 
-            onPress={() => navigation.navigate('SettingN')}
+            onPress={() => navigation.navigate('Setting')}
             style = {{
               alignItems:"center",
               justifyContent:"center",
@@ -24,6 +26,7 @@ function HomeScreen({ navigation }) {
           >
             <Text title center color = "white" style = {{fontSize: 80, width:350, borderRadius:30, borderWidth:5 }}>START</Text>
           </TouchableOpacity>
+          {/* Help Button */}
           <TouchableOpacity 
             onPress={() => navigation.navigate('Help')}
             style = {{

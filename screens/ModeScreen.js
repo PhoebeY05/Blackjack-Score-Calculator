@@ -5,12 +5,13 @@ import { useRoute } from "@react-navigation/native"
 
 function ModeScreen({ navigation }) {
     const route = useRoute()
-    const data = route.params?.data
+    const names = route.params?.names
     return (
       <View style={{ flex: 1}}>
+        {/* Standard Button */}
         <View style = {{alignItems:"center"}}>
           <TouchableOpacity 
-            onPress={() => navigation.navigate('Standard', {names:data})}
+            onPress={() => navigation.navigate('Standard', {names:names})}
             style = {{
               alignItems:"center",
               marginVertical:100, 
@@ -32,9 +33,10 @@ function ModeScreen({ navigation }) {
             />
           </TouchableOpacity>
         </View>
+        {/* Customise Button */}
         <View style = {{alignItems:"center", bottom:100}}>
           <TouchableOpacity 
-            onPress={() => navigation.navigate('Customise', {names:data})}
+            onPress={() => navigation.navigate('Score', {names:names, standard:false})}
             style = {{
               alignItems:"center",
               marginVertical:100, 

@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pyyyyy.blackjackscore"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,11 +27,17 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
+    "turns": {
       "eas": {
         "projectId": "b1545464-71d6-400b-b344-c253c4a8483d"
       }
     },
-    "owner": "pyyyyy"
+    "owner": "pyyyyy",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/b1545464-71d6-400b-b344-c253c4a8483d"
+    }
   }
 }
