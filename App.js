@@ -32,7 +32,6 @@ function App() {
         <Stack.Screen name="Help" component={HelpScreen} options={{ title: 'How to Use?' }}/>
         <Stack.Screen name="Mode" component={ModeScreen} options={{ title: 'Choose Mode' }} />
         <Stack.Screen name="Standard" component={StandardScreen} options={{ title: 'Standard Settings' }}/>
-        {/* <Stack.Screen name="Customise" component={CustomiseScreen} options={{ title: 'Score (Customise)' }} /> */}
         <Stack.Screen name="Score" component={ScoreScreen} options={{ title: 'Score' }}/>
         <Stack.Screen name="Combo" component={ComboScreen} />
       </Stack.Navigator>
