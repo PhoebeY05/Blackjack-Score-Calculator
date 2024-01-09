@@ -4,11 +4,8 @@ A mobile app to optimise playing experience with relatives during Chinese New Ye
 ### Inspiration:
 - Playing 21 with family during free time on overseas trip
 - Recorded gains and losses on Apple Notes
-- Not only tedious, but also inaccurate as 1 person has to calculate & record the score for 4 people
+- Not only tedious, but also inaccurate as 1 person had to calculate & record the score for 4 people between rounds
 - Wanted an app to automate the calculation & was interested in app development => culminated in this app
-
-### Detailed Instructions:
-![image](https://github.com/PhoebeY05/chinese-blackjack-score-calculator/assets/115935747/99c1fa26-1159-4d01-b1c3-7e7560d0bce8)
 
 ## Disclaimer
 This app is very messy & unstructured as it is training code for me to self-learn react native 
@@ -24,21 +21,29 @@ This app is very messy & unstructured as it is training code for me to self-lear
 - Styling optimised for iPhone 15 Plus so components might be distorted in some other models
 
 ## What does this app do?
-1. Calculates scores based on each player's combo
+1. Calculates scores based on each player's card combo
 2. Supports different playing styles
 - Standard: Preset rotation and fixed or variable duration
 - Customise: Spontaneously change banker with a single tap
 
+### House Rules:
+1. Wulong Success: Five cards <= 21
+2. Ban Luck: Ace & Picture card/10
+3. Ban Ban: 2 Aces
+
+### Detailed Instructions:
+![image](https://github.com/PhoebeY05/chinese-blackjack-score-calculator/assets/115935747/99c1fa26-1159-4d01-b1c3-7e7560d0bce8)
+
 ## How to install & use?
-## Requirements:
+### Requirements:
 - Node.js (https://nodejs.org/en/download)
 - Expo CLI & Recommended Tools (https://docs.expo.dev/get-started/installation/)
 - react-native-modal (https://www.npmjs.com/package/react-native-modal)
 - @kaloraat/react-native-text (https://www.npmjs.com/package/@kaloraat/react-native-text)
-## Steps to take:
+### Steps to take:
 1. Run package.json with npm install to manage the dependencies
 2. Run npx expo start in the root folder (chinese-blackjack-score-calculator-master)
-## Possible errors:
+### Possible errors:
 1. Expo Status Bar not installed
 ```
 "expo-status-bar" is added as a dependency in your project's package.json but it doesn't seem to be installed. Please run "yarn" or "npm install" to fix this issue.
