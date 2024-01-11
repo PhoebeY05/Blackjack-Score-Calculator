@@ -164,8 +164,9 @@ const PopupNumber = ({variable, setVariable, hidden, style, text_style, setCombo
       </TouchableOpacity>
       <Modal isVisible={isModalVisible}>
         <View style={{flex: 1, alignItems:"center", justifyContent:"center", top:"5%"}}>
-          <ControlButton title = "Busted!" style = {{height:"10%", width:"60%", borderRadius:10, borderWidth:5, backgroundColor:"#bfbfbf", justifyContent:"center", bottom:"20%"}} text_style = {{color:"black", fontSize:50}} onPress = {() => {updateElement(setCombo, index, "bao")}}></ControlButton>
-          <Text center bold style = {{color:"white", bottom:"15%", fontSize:80}}>OR</Text>
+          {/* <ControlButton title = "Busted!" style = {{height:"10%", width:"60%", borderRadius:10, borderWidth:5, backgroundColor:"#bfbfbf", justifyContent:"center", bottom:"20%"}} text_style = {{color:"black", fontSize:50}} onPress = {() => {updateElement(setCombo, index, "bao")}}></ControlButton> */}
+          <TouchableImage setArray = {setCombo} index = {index} value = "bao" source = {require('../assets/bao.png')} style = {{height:200, width:200, bottom:'15%'}}></TouchableImage>
+          <Text center bold style = {{color:"white", bottom:"20%", fontSize:80}}>OR</Text>
           <UserInput
             text = {hidden} 
             value = {variable} 
@@ -180,10 +181,10 @@ const PopupNumber = ({variable, setVariable, hidden, style, text_style, setCombo
                 position:"absolute",
                 backgroundColor:"#004d00",
                 borderRadius:24,
-                marginVertical:-40,
-                alignItems:"center"
+                alignItems:"center",
+                bottom:"100%"
             }}
-            text_style ={{fontSize:40, color:"#ffffff", fontWeight:"bold", width:1000, bottom:"200%", right:"30%"}}
+            text_style ={{fontSize:40, color:"#ffffff", fontWeight:"bold", width:1000, bottom:"350%", right:"30%"}}
             overallStyle = {{ marginHorizontal: 24, width: 200}}
             textAlign = "center"
             keyboardType= "number-pad"
