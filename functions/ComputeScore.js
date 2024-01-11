@@ -6,7 +6,7 @@ const computeScore = (score, setScore, combo, banker) => {
         if (i !== banker) {
             let b_score, p_score;
             if (combo[i] != combo[banker]){
-                if (combo[banker] === "bb") {
+                if (combo[banker] == "bb") {
                     b_score = updatedScore[banker] + 3;
                     p_score = updatedScore[i] - 3;
                 } else if (combo[i] == "bb"){
@@ -30,11 +30,11 @@ const computeScore = (score, setScore, combo, banker) => {
                 }  else if (combo[i] == "failure"){
                     b_score = updatedScore[banker] + 2;
                     p_score = updatedScore[i] - 2; 
-                } else if (combo[i]>combo[banker]){
+                } else if (combo[i]>combo[banker]||combo[banker]=="bao"){
                     b_score = updatedScore[banker] - 1;
                     p_score = updatedScore[i] + 1;
                 }
-                else if (combo[i]<combo[banker]){
+                else if (combo[i]<combo[banker]||combo[i]=="bao"){
                     b_score = updatedScore[banker] + 1;
                     p_score = updatedScore[i] - 1;
                 }

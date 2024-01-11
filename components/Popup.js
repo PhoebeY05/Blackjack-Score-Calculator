@@ -6,6 +6,7 @@ import UserInput from '../components/UserInput'
 import { ControlButton, ConfirmButton  } from "./Buttons.js";
 import TouchableImage from "../components/TouchableImage.js";
 import updateElement from "../functions/Lists/UpdateElement.js";
+import AppendToList from "../functions/Lists/AppendToList.js";
 
 
 const PopupSetting = ({hidden, variable, setVariable, setSetting, mode, style, visible, text_style}) => {
@@ -162,7 +163,9 @@ const PopupNumber = ({variable, setVariable, hidden, style, text_style, setCombo
         <Text center bold style = {text_style}>{visible}</Text>
       </TouchableOpacity>
       <Modal isVisible={isModalVisible}>
-        <View style={{flex: 1}}>
+        <View style={{flex: 1, alignItems:"center", justifyContent:"center", top:"5%"}}>
+          <ControlButton title = "Busted!" style = {{height:"10%", width:"60%", borderRadius:10, borderWidth:5, backgroundColor:"#bfbfbf", justifyContent:"center", bottom:"20%"}} text_style = {{color:"black", fontSize:50}} onPress = {() => {updateElement(setCombo, index, "bao")}}></ControlButton>
+          <Text center bold style = {{color:"white", bottom:"15%", fontSize:80}}>OR</Text>
           <UserInput
             text = {hidden} 
             value = {variable} 
@@ -172,26 +175,22 @@ const PopupNumber = ({variable, setVariable, hidden, style, text_style, setCombo
                 height: 100,
                 fontSize: 50,
                 justifyContent: "center",
-                marginBottom:20,
                 borderWidth:3, 
-                paddingLeft:10,
-                top:300,
                 width:200,
-                left:60,
                 position:"absolute",
                 backgroundColor:"#004d00",
                 borderRadius:24,
                 marginVertical:-40,
                 alignItems:"center"
             }}
-            text_style ={{fontSize:40, top:200, color:"#ffffff", fontWeight:"bold", width:1000}}
+            text_style ={{fontSize:40, color:"#ffffff", fontWeight:"bold", width:1000, bottom:"200%", right:"30%"}}
             overallStyle = {{ marginHorizontal: 24, width: 200}}
             textAlign = "center"
             keyboardType= "number-pad"
             clearButtonMode="never"
             maxLength={5}
             />
-          <TouchableOpacity onPress={toggleModal} style = {{borderWidth:5, backgroundColor:"#bfbfbf", top:400, height:50, width:150, left:20, position:"absolute"}}>
+          <TouchableOpacity onPress={toggleModal} style = {{borderWidth:5, backgroundColor:"#bfbfbf", top:"60%", height:50, width:150, left:20, position:"absolute"}}>
             <Text center bold style = {{fontSize:30, color:"black"}}>Go Back</Text>
             </TouchableOpacity>
             <ControlButton title = "Submit" onPress = {() => {updateElement(setCombo,index, Number(variable))}}
@@ -200,7 +199,7 @@ const PopupNumber = ({variable, setVariable, hidden, style, text_style, setCombo
                 fontSize: 30,
                 justifyContent: "center",
                 marginBottom:20,
-                top:100,
+                top:"26%",
                 paddingLeft:10,
                 width:200,
                 left:70,
@@ -217,8 +216,7 @@ const PopupNumber = ({variable, setVariable, hidden, style, text_style, setCombo
                 fontSize:30,
                 height:50
             }}
-        >
-        </ControlButton>
+        />
         <ControlButton title = "Check Your Score!" onPress = {() => navigation.navigate(page, {setting :setting, turns: turns, names:names, score:score, banker:banker, combo:combo, count:count, refresh:refresh, standard:standard})}
             style = {{
                 backgroundColor: "red",
@@ -228,7 +226,7 @@ const PopupNumber = ({variable, setVariable, hidden, style, text_style, setCombo
                 justifyContent: "center",
                 borderRadius:10,
                 borderWidth:3,
-                top:'50%'
+                top:'10%'
             }}
             text_style = {{
                 fontSize: 30,
