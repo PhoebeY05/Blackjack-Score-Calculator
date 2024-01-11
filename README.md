@@ -55,7 +55,7 @@ This app is very messy & unstructured as it is training code for me to self-lear
 sudo npm install
 ```
 # Credits
-- banban.png, banluck.png, wulong.png: https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.seedly.sg%2Fguide-to-winning-ban-luck-blackjack-this-chinese-new-year-cny%2F&psig=AOvVaw0hIUOIishhAgP3wkmVl8Gf&ust=1705045646834000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCKiYjO_s1IMDFQAAAAAdAAAAABAE
+- banban.png, banluck.png: https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.seedly.sg%2Fguide-to-winning-ban-luck-blackjack-this-chinese-new-year-cny%2F&psig=AOvVaw0hIUOIishhAgP3wkmVl8Gf&ust=1705045646834000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCKiYjO_s1IMDFQAAAAAdAAAAABAE
 - bao.png: https://www.google.com/url?sa=i&url=https%3A%2F%2Fclipart-library.com%2Fbusted-cliparts.html&psig=AOvVaw3swXWLQN-CArTgXV-m1POr&ust=1705045954282000&source=images&cd=vfe&ved=0CBMQjRxqFwoTCODegaXt1IMDFQAAAAAdAAAAABAE
 
 
