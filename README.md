@@ -43,7 +43,11 @@ This app is very messy & unstructured as it is training code for me to self-lear
 - react-native-modal (https://www.npmjs.com/package/react-native-modal)
 - @kaloraat/react-native-text (https://www.npmjs.com/package/@kaloraat/react-native-text)
 ### Steps to take:
-1. Run package.json with npm install to manage the dependencies
+```
+npm install package.json
+npx expo start
+``` 
+1. Run package.json with npm install to manage the dependencies (add 'sudo' to the front if it doesn't work in MacOS)
 2. Run npx expo start in the root folder (chinese-blackjack-score-calculator-master)
 ### Possible errors:
 1. Expo Status Bar not installed
