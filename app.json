@@ -1,5 +1,6 @@
 {
   "expo": {
+
     "name": "blackjack-score",
     "slug": "blackjack-score",
     "version": "1.0.0",
@@ -39,5 +40,14 @@
     "updates": {
       "url": "https://u.expo.dev/b1545464-71d6-400b-b344-c253c4a8483d"
     }
-  }
+  },
+  "plugins": [
+    [
+      "expo-font",
+      {
+        "fonts": "node_modules/@expo-google-fonts/Salsa/Salsa-Regular.ttf"
+      }
+    ]
+  ]
+
 }

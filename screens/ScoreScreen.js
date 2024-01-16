@@ -8,22 +8,13 @@ import rotateBanker from '../functions/RotateBanker';
 import computeScore from "../functions/ComputeScore";
 import { RegularPopup } from "../components/Popup";
 import CleanList from '../functions/Lists/CleanList';
+import FixedLengthList from '../functions/Lists/FixedLengthList';
 
 
 // Function to increase variable by 1
 function addCount(count, setCount) {
     setCount(count + 1);
 };
-
-// Function to create a list of zeros
-const FixedLengthList = (length) => {
-    // Specify the fixed length of the list
-    const listLength = length;
-  
-    // Initialize an array with the desired length
-    const zeroList = Array(listLength).fill(0);
-    return(zeroList)
-}
 
 
 function ScoreScreen({navigation}) { 
@@ -81,10 +72,12 @@ function ScoreScreen({navigation}) {
             rotateBanker(turns=turns, setting=setting, players=names, count=count, banker=banker,setBanker=setBanker, setCount = setCount, addCount = addCount)
             if (count != 0){
                 computeScore(score, setScore, combo, banker)
+                setCombo(FixedLengthList(names.length))
             }
         }
         else {
             computeScore(score, setScore, combo, banker)
+            setCombo(FixedLengthList(names.length))
         }
     }
     // Component to change text in button if standard and remain constant if customise
