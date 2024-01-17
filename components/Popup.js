@@ -227,7 +227,7 @@ const PopupNumber = ({variable, setVariable, hidden, style, text_style, setCombo
                 justifyContent: "center",
                 borderRadius:10,
                 borderWidth:3,
-                bottom:'55%'
+                bottom:'60%'
             }}
             text_style = {{
                 fontSize: 30,
