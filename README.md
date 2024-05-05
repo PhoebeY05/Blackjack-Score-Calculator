@@ -1,10 +1,14 @@
-# CHINESE BLACKJACK SCORE CALCULATOR
+# Chinese Blackjack Score calculator
 ## Description
 A mobile app to optimise playing experience in Banluck/21/Chinese Blackjack with relatives during Chinese New Year! 
 
 Useful for those who...
 1. don't want to play with money => records scores 
 2. don't bring physical notes/cash => keeps track of debt/earnings
+
+## Technologies Used:
+1. React Native
+2. Expo Go
 
 ### Inspiration:
 - Played 21 with family during free time on overseas trip
