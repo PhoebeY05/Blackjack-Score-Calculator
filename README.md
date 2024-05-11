@@ -10,7 +10,7 @@ Useful for those who...
 1. React Native
 2. Expo Go
 
-### Inspiration:
+## Inspiration:
 - Played 21 with family during free time on overseas trip
 - Recorded gains and losses on Apple Notes
 - Not only tedious, but also inaccurate as 1 person had to calculate & record the score for 4 people between rounds
