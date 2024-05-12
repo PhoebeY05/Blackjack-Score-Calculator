@@ -1,4 +1,4 @@
-# Chinese Blackjack Score Calculator [![wakatime](https://wakatime.com/badge/user/018e18e4-ea39-46c6-b3da-dcbf7a45a702/project/018e37f3-d5a4-42ad-a24c-dd40083a2fc2.svg)](https://wakatime.com/badge/user/018e18e4-ea39-46c6-b3da-dcbf7a45a702/project/018e37f3-d5a4-42ad-a24c-dd40083a2fc2)
+# Chinese Blackjack Score Calculator
 ## Description 
 A mobile app to optimise playing experience in Banluck/21/Chinese Blackjack with relatives during Chinese New Year! 
 
