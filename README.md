@@ -1,14 +1,23 @@
-# CHINESE BLACKJACK SCORE CALCULATOR
-## Description
-A mobile app to optimise playing experience with relatives during Chinese New Year!
-### Inspiration:
-- Playing 21 with family during free time on overseas trip
+# Chinese Blackjack Score Calculator
+## Description 
+A mobile app to optimise playing experience in Banluck/21/Chinese Blackjack with relatives during Chinese New Year! 
+
+Useful for those who...
+1. don't want to play with money => records scores 
+2. don't bring physical notes/cash => keeps track of debt/earnings
+
+## Technologies Used:
+1. React Native
+2. Expo Go
+
+## Inspiration:
+- Played 21 with family during free time on overseas trip
 - Recorded gains and losses on Apple Notes
 - Not only tedious, but also inaccurate as 1 person had to calculate & record the score for 4 people between rounds
 - Wanted an app to automate the calculation & was interested in app development => culminated in this app
 
 ## Disclaimer
-This app is very messy & unstructured as it is training code for me to self-learn react native 
+This app is very messy & unstructured as it was created through independent learning
 ### ~~To improve in future~~ Improved:
 - [x] Redundant code: Chose to copy some elements instead of using conditional rendering which could lead to other problems (e.g. Customise Screen is mostly a copy of Score Screen)
 - [x] Repeated functionalities: Bypass constraints of use cases so less modification is necessary (e.g. returnUpdated & updateElement)
@@ -20,6 +29,10 @@ This app is very messy & unstructured as it is training code for me to self-lear
 - Basic score patterns have been tested but some extreme cases may not be calculated correctly
 - Styling optimised for iPhone 15 Plus so components might be distorted in some other models
 - Might still have minor errors I didn't encounter
+
+### Possible New Features:
+- Variable bets (e.g. bet $1 in 1st round & $2 in second)
+- Include differentiation in wulong success (i.e. five cards = 21 & five cards < 21) and triple 7 (7-7-7)
 
 ## What does this app do?
 1. Calculates scores based on each player's card combo
