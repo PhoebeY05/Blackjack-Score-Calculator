@@ -1,4 +1,4 @@
-# Chinese Blackjack Score Calculator
+# Blackjack Score Calculator
 ## Description 
 A mobile app to optimise playing experience in Banluck/21/Chinese Blackjack with relatives during Chinese New Year! 
 <p align="center">
