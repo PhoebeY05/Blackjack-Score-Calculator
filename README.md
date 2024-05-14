@@ -1,6 +1,10 @@
 # Chinese Blackjack Score Calculator
 ## Description 
 A mobile app to optimise playing experience in Banluck/21/Chinese Blackjack with relatives during Chinese New Year! 
+<p align="center">
+  <img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/Blackjack.png" alt="Sublime's custom image"/>
+</p>
+
 
 Useful for those who...
 1. don't want to play with money => records scores 
@@ -48,6 +52,13 @@ This app is very messy & unstructured as it was created through independent lear
 
 ### Detailed Instructions:
 ![image](https://github.com/PhoebeY05/chinese-blackjack-score-calculator/assets/115935747/99c1fa26-1159-4d01-b1c3-7e7560d0bce8)
+
+### Standard Rotation of Screens (Advanced Features in ["How To Use?"](#detailed-instructions))
+<img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/start.png" width="200" />  <img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/name.png" width="200" /> <img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/mode.png" width="200" />  <img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/standard.png" width="200" />  <img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/score.png" width="200" />  <img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/combo.png" width="200" />  <img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/number.png" width="200" />  <img src="https://github.com/PhoebeY05/chinese-blackjack-score-calculator/blob/master/Screen%20Pictures/special.png" width="200" />
+
+
+
+
 
 ## How to install & use?
 ### Requirements:
