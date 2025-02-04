@@ -72,7 +72,7 @@ npm install package.json
 npx expo start
 ``` 
 1. Run package.json with npm install to manage the dependencies (add 'sudo' to the front if it doesn't work in MacOS)
-2. Run npx expo start in the root folder (chinese-blackjack-score-calculator-master)
+2. Run npx expo start in the root folder (Blackjack-Score-Calculator-master)
 ### Possible errors:
 1. Expo Status Bar not installed
 ```
